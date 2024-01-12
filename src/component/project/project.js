@@ -77,10 +77,31 @@ const Projects = (props) => {
       </div>
       <h2 style={{ display: "flex" }}>Projects : </h2>
 
-      <ProjectDetails
+      {/* <ProjectDetails
         projectInfo={projectInfo}
         forwardedRef={props.forwardedRef}
-      />
+      /> */}
+<div className={classes.container}>
+  <h2>Mtechnocation</h2>
+  <h3>Android Developer</h3>
+  <p>2016-07 - 2017-07</p>
+
+  <p>Project lead of Mobile Application Development Team for various client-side projects.</p>
+  <p>Used third-party libraries, custom libraries, and APIs to develop new applications.</p>
+  <p>Handled various technical aspects like coding of modules using given design specifications, debugging, and fixing defects as well as analyzing.</p>
+
+  <h2>Android Projects</h2>
+
+  <h3>Kilinc App</h3>
+  <p>Individual Android Developer</p>
+  <p>Developed an Android application for [Brief description of Kilinc App].</p>
+  <p>Implemented various features and integrated third-party SDKs like Facebook, Twitter, and payment gateway.</p>
+
+  <h3>Upath Delivery App</h3>
+  <p>Individual Android Developer</p>
+  <p>Developed an Android application for [Brief description of Upath Delivery App].</p>
+  <p>Integrated Paytm SDK for money transfer using Retrofit and Volley.</p>
+  </div>
 
 {/*        
 <div className={classes.container}>

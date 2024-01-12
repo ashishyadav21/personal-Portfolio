@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { makeStyles, Chip, Avatar } from "@material-ui/core";
+import { makeStyles, Chip, Avatar, Hidden } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   outerContainer: {
@@ -64,6 +64,8 @@ const ProjectDetails = (props) => {
           alt="companyLogo"
         />
         </div> */}
+
+    <Hidden xsDown>       
       {!!projectInfo &&
         projectInfo.map((projectInfo, index) => (
           <div className={classes.innerContainer}>
@@ -154,6 +156,11 @@ const ProjectDetails = (props) => {
             <div style={{ border: "2px solid #9a9a9a", margin: "10px" }} />
           </div>
         ))}
+      </Hidden>
+      <Hidden xsUp>
+
+        
+      </Hidden>
     </div>
   );
 };

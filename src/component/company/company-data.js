@@ -1,8 +1,8 @@
 import reactIcon from "../../Assets/Images/react-icon.png";
 
 export const companyData = [
-  {
-    company: "CashEdge",
+  { id:1,
+    company: "Innostax Software Labs Pvt Ltd",
     JobProfile: "Software Developer",
     companyLogo:
       "https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397189367/9992bfb0c23f6d9a0091d99938fc886e.gif",
@@ -29,6 +29,7 @@ export const companyData = [
     ],
   },
   {
+    id:2,
     company: "Sapient",
     JobProfile: "Senior Software Developer",
     companyLogo:
@@ -55,7 +56,8 @@ export const companyData = [
       },
     ],
   },
-  {
+  { 
+    id: 3,
     company: "SAS",
     JobProfile: "Senior Software Developer",
     projects: [
@@ -79,6 +81,7 @@ export const companyData = [
     ],
   },
   {
+    id: 4,
     company: "IRIS",
     JobProfile: "Project Manager",
     projects: [

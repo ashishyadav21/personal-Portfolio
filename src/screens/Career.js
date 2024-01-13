@@ -5,6 +5,8 @@ import Companies from "../component/company/copmanies";
 import Projects from "../component/project/project";
 import { companyData } from "../component/company/company-data";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { style } from "@material-ui/system";
 
 const useStyle = makeStyles(() => ({
   outerContainer: {
@@ -78,7 +80,7 @@ const Career = (props) => {
         <Hidden smUp>
         {companyData.map((_dta) => {
           return (
-            <div style={{boxShadow: '0 10px 10px rgba(0, 0, 0, 0.1)', padding:'10px 5px'}}>
+            <div style={{boxShadow: '0 6px 6px rgba(0, 0, 0, 0.1)', padding:'10px 5px'}}>
               <div
                 style={{
                   display: "flex",
@@ -97,17 +99,19 @@ const Career = (props) => {
                   <spam style={{padding: '4px 4px'}}>{_dta.JobProfile}</spam>
                 </div>
                 <span onClick={() => displayProjects(_dta.id)}>
-                  <KeyboardArrowDownIcon />
+                  {  displayProjectsOnMobileView.id !== _dta.id ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
                 </span>
               </div>
               {displayProjectsOnMobileView.id === _dta.id ?
-              <div style={{ padding: '20px 10px'
+              <div style={{ padding: '10px 10px'
             }}>
-                {_dta.projects.map((project) => {
+                {_dta.projects.map((project,index) => {
                   return(
-                    <div>
-                      <span>{project.projectTitle}</span>
-                      <span style={{padding: '4px 4px'}}>{project.projectDescription}</span>
+                    <div style={{marginTop: '10px', display:'flex', flexDirection:'column'}}>
+                      <span style={{padding: '0px 10px',fontWeight:'300'}}>{project.projectTitle}</span>
+                      <p style={{padding: '2px 10px',fontWeight:'300'}}>{project.projectDescription}</p>
+                      <a href={project.projectLiveUrl} style={{padding: '0px 10px', textDecoration:'none'}}>Click here to Check website online</a>
+                      {index !== _dta.projects.length ? <div style={{borderBottom: "0.5px solid #b3abab", padding:'5px'}}></div> : null}
                     </div>
                   )
                 })}

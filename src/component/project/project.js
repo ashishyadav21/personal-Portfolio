@@ -77,11 +77,11 @@ const Projects = (props) => {
       </div>
       <h2 style={{ display: "flex" }}>Projects : </h2>
 
-      {/* <ProjectDetails
+      <ProjectDetails
         projectInfo={projectInfo}
         forwardedRef={props.forwardedRef}
-      /> */}
-<div className={classes.container}>
+      />
+{/* <div className={classes.container}>
   <h2>Mtechnocation</h2>
   <h3>Android Developer</h3>
   <p>2016-07 - 2017-07</p>
@@ -101,7 +101,7 @@ const Projects = (props) => {
   <p>Individual Android Developer</p>
   <p>Developed an Android application for [Brief description of Upath Delivery App].</p>
   <p>Integrated Paytm SDK for money transfer using Retrofit and Volley.</p>
-  </div>
+  </div> */}
 
 {/*        
 <div className={classes.container}>

@@ -51,6 +51,7 @@ const Career = (props) => {
   const [displayProjectsOnMobileView, setDisplayProjectsOnMobileView] = useState({})
 
   const projectDetailsRef = useRef(null);
+  const companyDetailRef = useRef(null)
 
   const classes = useStyle({ ...props, pathname });
  
@@ -71,7 +72,7 @@ const Career = (props) => {
       </div>
       <div className={classes.innerContainer}>
         <Hidden xsDown>
-        <div className={classes.projectContainer}>
+        <div className={classes.projectContainer} ref={projectDetailsRef}>
           <Projects forwardedRef={projectDetailsRef} />
         </div>
         </Hidden>

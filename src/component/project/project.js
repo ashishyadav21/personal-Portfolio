@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { makeStyles } from "@material-ui/core";
-import { getcompanyProjects } from "../company";
-import { useSelector } from "react-redux";
+ import { useSelector } from "react-redux";
 import { getCompanyDetails } from "../company/company.slice";
 import { get } from "lodash";
 import ProjectDetails from "./project-details";
@@ -81,67 +80,7 @@ const Projects = (props) => {
         projectInfo={projectInfo}
         forwardedRef={props.forwardedRef}
       />
-{/* <div className={classes.container}>
-  <h2>Mtechnocation</h2>
-  <h3>Android Developer</h3>
-  <p>2016-07 - 2017-07</p>
-
-  <p>Project lead of Mobile Application Development Team for various client-side projects.</p>
-  <p>Used third-party libraries, custom libraries, and APIs to develop new applications.</p>
-  <p>Handled various technical aspects like coding of modules using given design specifications, debugging, and fixing defects as well as analyzing.</p>
-
-  <h2>Android Projects</h2>
-
-  <h3>Kilinc App</h3>
-  <p>Individual Android Developer</p>
-  <p>Developed an Android application for [Brief description of Kilinc App].</p>
-  <p>Implemented various features and integrated third-party SDKs like Facebook, Twitter, and payment gateway.</p>
-
-  <h3>Upath Delivery App</h3>
-  <p>Individual Android Developer</p>
-  <p>Developed an Android application for [Brief description of Upath Delivery App].</p>
-  <p>Integrated Paytm SDK for money transfer using Retrofit and Volley.</p>
-  </div> */}
-
-{/*        
-<div className={classes.container}>
-  <h1>Ashish Yadav</h1>
-  <h2>Senior Software Developer</h2>
-
-  <address>
-    <p>Address: Gurgaon, India 122001</p>
-    <p>Phone: +919671761787</p>
-    <p>E-mail: a.yadavashish21@gmail.com</p>
-  </address>
-
-  <h2>Accomplished Senior Software Developer</h2>
-  <p>With 5 years of experience leading projects by acting as architect, developer, and programmer analyst. Proficient in supporting project deliverables and maintaining releases.</p>
-
-  <h2>Education</h2>
-  <ul>
-    <li>2010-07 - 2014-07: Bachelor of Applied Science in Information Technology, PDM College of Engineering - Bahadurgarh, HR (CGPA: 62.20)</li>
-    <li>2009-04 - 2010-03: 10+2, Triveni Memorial Senior Secondary School - Bahadurgarh (CGPA: 6.4)</li>
-  </ul>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>JavaScript - Very Good</li>
-    <li>ReactJs - Very Good</li>
-   </ul>
-
-  <h2>Work History</h2>
-
-  <h3>2021-05 - Current: Senior Software Developer</h3>
-  <p>Protiviti India, Gurgaon</p>
-  <ul>
-    <li>Build Project from scratch and Setup Project using multiple Technologies.</li>
-    <li>Discussed project progress with customers, collected feedback on different stages, and directly addressed concerns.</li>
-   </ul>
-
-  {/* <!-- Add more work history entries as needed --> */}
-
-{/* </div> */} 
-      <span className={classes.lastDay} ref={props.forwardedRef}>
+       <span className={classes.lastDay} ref={props.forwardedRef}>
         Last Day : 25 Apr 2015
       </span>
     </div>

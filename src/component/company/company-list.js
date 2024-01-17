@@ -47,8 +47,7 @@ const useStyle = makeStyles(() => ({
 }));
 
 const CompanyList = (props) => {
-  console.log("props -->", props);
-  const classes = useStyle();
+   const classes = useStyle();
 
   console.log(props);
   useEffect(() => {
@@ -59,7 +58,9 @@ const CompanyList = (props) => {
   const dispatch = useDispatch();
 
   const onhandleClick = () => {
-    console.log("props.forwardedRef -->", props.forwardedRef);
+    console.log("props.forwardedRef -->", props.forwardedRef.current);
+    props?.forwardedRef?.current?.focus()
+    props.forwardedRef.current.firstChild.style.transition = '5s';
     // window.scrollTo(0, props.forwardedRef.current.offsetTop);
     // props.forwardedRef.current.scrollIntoView({ behavior: "smooth" });
   };

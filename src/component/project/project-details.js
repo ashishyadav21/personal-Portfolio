@@ -148,7 +148,7 @@ const ProjectDetails = (props) => {
                       <Avatar alt="Natacha" src={_technology.language.icon} />
                     }
                     classes={{
-                      root: classes.root, // class name, e.g. `classes-nesting-root-x`
+                      root: classes.root, 
                     }}
                   />
                 ))}
@@ -159,7 +159,7 @@ const ProjectDetails = (props) => {
       </Hidden>
       <Hidden xsUp>
 
-        
+
       </Hidden>
     </div>
   );

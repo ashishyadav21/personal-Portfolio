@@ -10,10 +10,12 @@ export const companyData = [
     endDate: "17th July 2019",
     projects: [
       {
-        projectTitle: "Autodesk Construction cloud",
+        projectTitle: "Phlebotomist Rider App",
         projectDescription:
-          `This app is only for Phlebotomists only. A notification pop up to Phlebotomists's phone.
-           It will help to collect sample in around the city. 
+          `This app is only for Phlebotomist only. It is a bike rider app.
+           This functionality of this app that, whenever a client booked test online through the U-firstDiagonistics app a notification pop up to
+          the nearby rider's phone. Rider selected by the nearest rider location. Rider accept the booking and went to customer's address to collect the data.
+          /n It will help to collect sample around the city. 
            It will guide you to the patient's home address and will inform you about the sample drop off point. It take you 
            to directly to Patient's address with the help of google map`,
         projectRole: "Junior Developer",
@@ -25,7 +27,7 @@ export const companyData = [
           { name: "Retrofit", language: { icon: reactIcon } },
           { name: "Google Maps", language: { icon: reactIcon } },
          ],
-        projectDuration: "12 months",
+        projectDuration: "6-7 months",
         projectLiveUrl: "https://play.google.com/store/apps/details?id=com.lalpathlabs.phlebo&hl=en_IN&gl=US",
       },
       {
@@ -34,7 +36,7 @@ export const companyData = [
           `This app realted to note down the reading of a meter. App contain different type of meter. it contain
           Electricity and Water reading meter. It was created for UHBVN. the app will get open with the user authentication.
           user enter the meter number and all the details will open in edit mode. After this the user can enter the reading and can 
-          generate the bill with the help of previous reading and current reading`,
+          generate the bill with the help of previous reading and current reading.`,
         projectRole: "Android Developer",
         TeamSize: 7,
         projectType: "Client",
@@ -44,7 +46,7 @@ export const companyData = [
           { name: "Retrofit", language: { icon: reactIcon } },
           { name: "Google Maps", language: { icon: reactIcon } },
          ],
-        projectDuration: "12 months",
+        projectDuration: "6-7 months",
         projectLiveUrl: "https://play.google.com/store/apps/details?id=com.dimonnwc3.meterable&hl=en_IN&gl=US",
       },
     ],
@@ -101,7 +103,8 @@ export const companyData = [
       {
         projectTitle: "Plan Grid",
         projectDescription:
-          `Plangrid is a civil web app. My task on this just to fix the bugs and review and
+          `PlanGrid is a construction productivity software designed for onsite construction workers. PlanGrid digitises blueprints. 
+          It features version control and collaboration tools such as field markups, progress photos and issues tracking. My task on this just to fix the bugs and review and
           refactoring. This was on the edge to handover so my only work to handover the good quality of code.
           did the basic CSS in this. debugging and fixing the defects as well as analyzing`,
         TeamSize: 4,
@@ -129,7 +132,8 @@ export const companyData = [
           `Monoly is a web chat app. its functionality is similar to slack. but it provide data privacy.
           Where a enterprises can create his own workspace on this app. can create new discussion and add the user
           to chat. Can send invitation to the external user out of organizations. can remove user and add user on a
-          discussion`,
+          discussion. In this app customer can create different group within team to communicate and sharing the data.
+          Voice call and Video call functionality. It use the real time chat services. can share images and other files also.`,
         TeamSize: 30,
         projectType: "Client",
         TechnologyUsed: [
@@ -152,9 +156,15 @@ export const companyData = [
       {
         projectTitle: "Credential Engine",
         projectDescription:
-          `This is app is related to courses that company provided, it provides to track you all the cards and coursed according to semester wise
-          It is basically drag and drop application where user drag and drag courses in any semester they want to access and can connect courses's card
-          with the help of arrow`,
+          `The Pathway Builder offers a user-friendly drag and drop interface that allows you to visually construct your pathway.
+          By using connectors, you can link the Pathway Components together to depict the progression towards the destination. \
+          This intuitive tool enables you to build pathways ranging from simple to complex, seamlessly incorporating data from multiple sources.
+          The Credential Registry provides a rich collection of Pathway Components that you can leverage by searching for relevant components and adding them to the Pathway Builder board. In cases where the desired data is not available in the Registry, 
+          you have the flexibility to utilize a library of components and combine them with the Registry data. \
+
+          CTDL Pathways are a means of designing and representing progressions towards specific destinations using Pathway Components.  \
+          In the context of the Credential Registry Pathway Builder, a Pathway Component refers to any entity such as credentials, courses, competencies, extracurricular, work experience, or jobs that can be included in a pathway. The ultimate goal of a pathway is to reach a destination,
+          which is represented by a Pathway Component that signifies where a person could be upon completing the pathway`,
         projectRole: "Team Lead",
         TeamSize: 4,
         projectType: "Client",
@@ -171,7 +181,13 @@ export const companyData = [
       {
         projectTitle: "Successware",
         projectDescription:
-          `It is Software Solutions for Home Service Contractors. Through this app you can book any service for your office and home.
+          `Successware stands out from other platforms because the accounting functionality, customer service software, and service tracking software are directly accessible within the platform, not as an add-on or separate purchase.
+
+          When developing Successware, the accounting portion was created to tie into each aspect of the platform – invoices, price books, 
+          general ledgers – to offer you one streamlined, simple solution.
+          
+          The customer service management software is integrated into the Successware platform to help our clients maintain their prospects and current customers with ease.
+          It is Software Solutions for Home Service Contractors. Through this app you can book any service for your office and home.
           services like Electricity, Plumber, etc. It book your service on a specific date and keep track of all your services for future easiness`,
         projectRole: "Team Lead",
         TeamSize: 4,
